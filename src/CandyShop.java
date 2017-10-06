@@ -1,24 +1,27 @@
-import java.util.ArrayList;
-
 public class CandyShop {
 
     int money;
     int sugar;
-    int lollipopPrice = 10;
-    int candyPrice = 20;
-    int CANDY = 0;
-    int LOLLIPOP = 0;
-    /*String nameCandy = "candies";
-    String nameLollipop = "lollipops";*/
 
-
-    public CandyShop(int money, int grams) {
+    public CandyShop(int money, int sugar) {
         this.money = money;
-        this.sugar = grams;
+        this.sugar = sugar;
+    }
+
+    public CandyShop(int money) {
+        this.money += money;
     }
 
     public void candyshop (){
-        System.out.println("Inventory: " + CANDY + "candies, " + LOLLIPOP + "lollipops, Income: " + money +"$, Sugar:" + sugar + "gr");
+        System.out.println("Inventory: " + candyNumber + "candies, " + lollipopNumber + "lollipops, Income: " + money +"$, Sugar:" + sugar + "gr");
+    }
+
+    public void CANDY (){
+
+    }
+
+    public void LOLLIPOP() {
+
     }
 
     public int createSweets(int type) {
@@ -26,7 +29,7 @@ public class CandyShop {
     }
 
     public int sell(String name, int number) {
-
+        if (name == "")
     }
 
     public void raise(int percentage){
@@ -34,8 +37,8 @@ public class CandyShop {
        lollipopPrice *= (1 + percentage /100);
     }
 
-      public void buySugar(int grams){
-        sugar += grams;
+      public int buySugar(int grams){
+         return sugar += grams;
     }
 }
 
