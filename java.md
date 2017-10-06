@@ -32,8 +32,14 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+[There are some major differences which are listed below:
+ Meanwhile functions can be defined outside of the class, methods must be defined within a class.
+ Functions could be defined in any structured languages but methods are present in object oriented languages like Java.
+ Another difference is that functions could be called independently, which is not true in the case of methods where an object or an instance is needed to call it.]
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+[A constructor in Java is a code which is applied when an object is created since it is main purpose is to create an instance of a class.
+ It might be compared to methods but there several distinctions such as constructor is called automatically when an object is created,
+ the name of the constructor has an identical name as of the class, constructors do not own such properties as return type. Finally
+ we do not regard constructors as part of the class not like we do with methods.]
